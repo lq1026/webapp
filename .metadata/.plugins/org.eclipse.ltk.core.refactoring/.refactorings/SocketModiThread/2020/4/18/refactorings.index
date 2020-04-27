@@ -1,0 +1,9 @@
+1587970685008	Rename type 'ServerThread'
+1587970908653	Extract local variable 'serverSocket'
+1587971076487	Extract local variable 'clientSocket'
+1587973661996	Extract local variable 'str'
+1587977011330	Rename package 'com.socket.test'
+1587977019096	Copy package
+1587977050847	Delete element
+1587977058207	Copy package
+1587997639783	Move folder

@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Mon Apr 27 22:45:47 CST 2020
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\moon\\Desktop\\webapp\\WebServiceCXFDemo\\WebRoot\\WEB-INF\\lib\\spring-web-4.2.1.RELEASE.jar=WEB-INF/lib/spring-web-4.2.1.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\moon\\Desktop\\webapp\\WebServiceCXFDemo\\WebRoot\\WEB-INF\\lib\\spring-web-5.1.14.RELEASE.jar=WEB-INF/lib/spring-web-5.1.14.RELEASE.jar

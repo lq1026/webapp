@@ -1,0 +1,12 @@
+package com.webservice.server;
+
+import javax.jws.WebService;
+/**
+ * jdk方式开发webservice
+ * @author moon
+ *
+ */
+@WebService
+public class Test {
+   
+}

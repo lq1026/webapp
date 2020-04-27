@@ -1,0 +1,11 @@
+）首先要创建一个和服务器端一样的服务接口，（如果客户端和服务器端在同一个项目中则可以省略这步）
+
+    package com.service;  
+      
+    import javax.jws.WebParam;  
+    import javax.jws.WebService;  
+      
+    @WebService  
+    public interface IHelloWorld {  
+        public String sayHello(@WebParam(name = "arg0") String text);  
+    }  

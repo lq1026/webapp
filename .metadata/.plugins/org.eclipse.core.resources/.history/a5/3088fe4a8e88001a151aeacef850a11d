@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <context-param>  
+        <param-name>contextConfigLocation</param-name>  
+        <param-value>  
+            /WEB-INF/webservice.xml       
+        </param-value>  
+    </context-param>  

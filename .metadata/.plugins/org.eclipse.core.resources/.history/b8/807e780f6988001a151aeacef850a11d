@@ -1,0 +1,24 @@
+package com.webservice.server;
+
+import javax.jws.WebMethod;
+import javax.jws.WebService;
+import javax.xml.ws.Endpoint;
+/**
+ * jdk方式开发webservice
+ * @author moon
+ *
+ */
+@WebService
+public class Test {
+	
+	@WebMethod
+     public int squared(int x) {
+    	int result = x*x;
+    	System.out.println("求平方"+x+"-----"+result);
+    	return result;
+     }
+	
+	public static void main(String[] args) {
+		Endpoint.publish("http://localhost:8066/testservice", new test());
+	}
+}

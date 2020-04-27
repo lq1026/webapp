@@ -1,0 +1,11 @@
+package com.socket.test;
+/**
+ * 
+ * @author moon
+ * socket服务端
+ */
+public class Server {
+     public static void main(String[] args) {
+		
+	}
+}

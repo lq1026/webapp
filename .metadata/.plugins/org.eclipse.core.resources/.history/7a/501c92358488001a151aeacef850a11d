@@ -1,0 +1,31 @@
+（2）调用公网手机号归属地查询服务
+
+第一步：wsimport生成客户端代码
+wsimport -p cn.itcast.mobile -s . http://ws.webxml.com.cn/WebServices/MobileCodeWS.asmx?wsdl
+第二步：阅读使用说明书（wsdl文档），使用生成的客户端代码调用服务端
+
+package cn.itcast.mobile.client;
+
+import cn.itcast.mobile.MobileCodeWS;
+import cn.itcast.mobile.MobileCodeWSSoap;
+/**
+ * 
+* @ClassName: MobileClient 
+* @Description: TODO(公网手机号查询客户端) 
+* @author 
+* @date 2017年11月8日 上午8:35:02 
+*
+ */
+public class MobileClient {
+    public static void main(String[] args) {
+        //创建服务访问点集合的对象，例如：<wsdl:service name="MobileCodeWS">
+        MobileCodeWS mobileCodeWS = new MobileCodeWS();
+        //获取服务实现类，例如：<wsdl:portType name="MobileCodeWSSoap">，port--binding--portType
+        //MobileCodeWSSoap mobileCodeWSSoap = mobileCodeWS.getPort(MobileCodeWSSoap.class);
+        //根据服务访问点的集合中的服务访问点的绑定对象来获得绑定的服务类
+        //获得服务类的方式是get+服务访问点的name：getWSServerPort
+        MobileCodeWSSoap mobileCodeWSSoap = mobileCodeWS.getMobileCodeWSSoap();
+        String mobileCodeInfo = mobileCodeWSSoap.getMobileCodeInfo("18518114962", "");
+        System.out.println(mobileCodeInfo);
+    }
+}
